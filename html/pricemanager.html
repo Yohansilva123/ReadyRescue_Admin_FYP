@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div>
+    <ul>
+        <li><img src="css/images/logo_admin.png" alt="homepage"style="width: 200px" onclick="window.location='index.html'"/></li>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a class="active"  href="pricemanager.html">Manage Prices</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+
+
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <header>
+        <table align="center">
+            <col width="80%">
+            <col width="10%">
+            <tr>
+                <td>
+                    <p>Administrator - Manage Prices</p>
+                </td>
+                <td>
+                    <button class="button button1" onclick="logOut()">Logout</button>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <h2>List of Prices for the services</h2>
+    <h3>The prices provided are on per minute bassed for all the services. You can change the price per service in the page</h3>
+    <p>
+<!--        <ol id="mechanicList">-->
+<!--        </ol>-->
+    <table id="priceList" >
+        <tr class="listElements">
+            <td>
+                <b>Service</b>
+            </td>
+            <td>
+                <b>Timely Price</b>
+            </td>
+            <td>
+                <b>New Timely Price</b>
+            </td>
+            <td>
+                <b>Base Price</b>
+            </td>
+            <td>
+                <b>New Base Price</b>
+            </td>
+        </tr>
+        </table>
+    </p>
+
+    <table align="center">
+        <col width="50%">
+        <col width="50%">
+        <tr>
+
+        </tr>
+    </table>
+</div>
+
+<!--<footer>-->
+<!--    <p>Footer</p>-->
+<!--</footer>-->
+<script src="libraries/p5.js"></script>
+<script src="libraries/p5.dom.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+<script src="js/manageprices.js"></script>
+
+</body>
+</html>

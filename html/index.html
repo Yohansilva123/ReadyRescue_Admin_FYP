@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div>
+    <ul>
+        <li><img src="css/images/logo_admin.png" alt="homepage"style="width: 200px" onclick="window.location='index.html'"/></li>
+        <li><a class="active" href="index.html">Dashboard</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="pricemanager.html">Manage Prices</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+
+
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <header>
+        <table align="center">
+            <col width="80%">
+            <col width="10%">
+            <tr>
+                <td>
+                    <p>Administrator - Dashboard</p>
+                </td>
+                <td>
+                    <button class="button button1" onclick="logOut()">Logout</button>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <h2>Track and Manage application activity</h2>
+    <h3>Dashboard relating to usage ratings of the application are shown below</h3>
+<!--    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>-->
+    <table align="center">
+        <col width="50%">
+        <col width="50%">
+        <tr>
+            <td>
+                <iframe  style="font-family: Calbibri" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl72xAPLph2d4Y5cJoUAq8RBsOXBO2jDOQdI9fflsBbGiUQplHn-FloETM5zc8FnxJc2sPgsl2KkYY/pubchart?oid=1188198838&amp;format=interactive"></iframe>
+            </td>
+            <td>
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl72xAPLph2d4Y5cJoUAq8RBsOXBO2jDOQdI9fflsBbGiUQplHn-FloETM5zc8FnxJc2sPgsl2KkYY/pubchart?oid=1954735118&amp;format=interactive"></iframe>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<!--<footer>-->
+<!--    <p>Footer</p>-->
+<!--</footer>-->
+
+<script src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
